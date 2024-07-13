@@ -6,7 +6,7 @@ import { formatTime } from "../../utils/timerfunction";
 import { timerStart, timerStop } from "../../utils/buttonstyle";
 import InputCustom from "../input/Input";
 import { timerInput } from "../../utils/inputstyle";
-
+//
 const Timer = () => {
   const [startSwitch, setStartSwitch] = useState(false);
   const [objTime, setObjTime] = useState({ hr: 0, min: 40, sec: 0 });
