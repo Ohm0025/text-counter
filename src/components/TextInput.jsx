@@ -6,7 +6,6 @@ const TextInput = () => {
   const textareaRef = useRef();
 
   useEffect(() => {
-    console.log(textareaRef);
     textareaRef.current.focus();
     autosize(textareaRef.current);
   }, []);
@@ -26,8 +25,7 @@ const TextInput = () => {
         ref={textareaRef}
         className="textbox"
         name=""
-        id=""
-      ></textarea>
+        id=""></textarea>
       <div className="count-box">word count : {wordCount}</div>
     </div>
   );
