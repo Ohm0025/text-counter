@@ -2,7 +2,7 @@
   "name": "text-counter",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Ohm0025.github.io/text-counter",
+  "homepage": "http://Ohm0025.github.io/text-counter",
   "type": "module",
   "scripts": {
     "dev": "vite",
