@@ -18,4 +18,14 @@ let timerStop = {
   padding: "7px 7px",
 };
 
-export { timerStart, timerStop };
+let resetBtn = {
+  backgroundColor: "gray",
+  color: "white",
+  fontSize: "20px",
+  border: "0",
+  borderRadius: "10px",
+  cursor: "pointer",
+  padding: "7px 7px",
+};
+
+export { timerStart, timerStop, resetBtn };
