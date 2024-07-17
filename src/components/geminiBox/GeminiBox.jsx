@@ -2,12 +2,14 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import style from "./GeminiBox.module.css";
 import { aiRun } from "../../utils/aigenerate";
 import { useState } from "react";
+import { useRequest } from "../../store/request";
+import { useInstruction } from "../../store/instruction";
 
-let exampleQ =
-  "Some people say that children should spend their free time on clubs and extra classes. Others, however, believe they should spend their leisure time doing activities with their families.Discuss both of these views and give your own opinion.";
-
-const GeminiBox = (rawText) => {
+const GeminiBox = () => {
   const [resText, setResText] = useState("");
+
+  const { request } = useRequest();
+  const { instruction } = useInstruction();
 
   const genAI = new GoogleGenerativeAI(
     "AIzaSyA2g2LZG-FGoZx4EtORerh7SM6CG13JC9U"
@@ -17,9 +19,13 @@ const GeminiBox = (rawText) => {
   return (
     <div className={style.container}>
       <button
-        onClick={async () => {
-          const res = await aiRun(model, exampleQ, rawText);
-          setResText(res);
+        // onClick={async () => {
+        //   const res = await aiRun(model, instruction, request);
+        //   setResText(res);
+        // }}
+        onClick={() => {
+          console.log(instruction);
+          console.log(request);
         }}>
         evaluate by ai
       </button>

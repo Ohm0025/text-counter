@@ -2,7 +2,7 @@
   "name": "text-counter",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://Ohm0025.github.io/text-counter",
+  "homepage": "https://Ohm0025.github.io/text-counter",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,8 +15,10 @@
   "dependencies": {
     "@google/generative-ai": "^0.14.1",
     "autosize": "^6.0.1",
+    "axios": "^1.7.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

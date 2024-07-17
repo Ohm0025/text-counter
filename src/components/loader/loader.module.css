@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  & .textLoad {
+    font-size: 14px;
+  }
+}
+.spinner {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 10px solid gray;
+  border-bottom: 10px solid red;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
