@@ -1,7 +1,7 @@
-import { useRef } from "react";
 import { useResult } from "../../store/result";
 import Loader from "../loader/Loader";
 import style from "./modal.module.css";
+import { formatResult } from "../../utils/textFormat";
 
 const Modal = ({ isLoading, setIsOpen }) => {
   const { result } = useResult();
@@ -14,7 +14,9 @@ const Modal = ({ isLoading, setIsOpen }) => {
           <button onClick={() => setIsOpen(false)}>x</button>
         </div>
         <hr />
-        <div className={style.body}>{isLoading ? <Loader /> : result}</div>
+        <div className={style.body}>
+          {isLoading ? <Loader /> : formatResult(result)}
+        </div>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ import { timerInput } from "../../utils/inputstyle";
 //
 const Timer = () => {
   const [startSwitch, setStartSwitch] = useState(false);
-  const [objTime, setObjTime] = useState({ hr: 0, min: 0, sec: 5 });
+  const [objTime, setObjTime] = useState({ hr: 0, min: 40, sec: 0 });
   const [min, setMin] = useState(
     objTime.hr * 60 * 60000 + objTime.min * 60000 + objTime.sec * 1000
   );

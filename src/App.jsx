@@ -6,12 +6,10 @@ import QuestionBox from "./components/questionBox/QuestionBox";
 
 function App() {
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>Word Counter</h1>
+    <div style={{ marginBottom: "100px" }}>
+      <h1 style={{ textAlign: "center" }}>IELTS WRITING</h1>
       <Timer />
-
       <QuestionBox />
-
       <TextInput />
       <GeminiBox />
     </div>
